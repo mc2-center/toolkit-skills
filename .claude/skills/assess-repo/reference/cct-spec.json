@@ -1,0 +1,60 @@
+{
+  "_comment": "Cancer Complexity Toolkit (CCT) shared spec. The 11 Almanack sustainability check IDs, ease-of-fix tiers, and empirical SHAP weights. Canonical home will eventually move to cckp-toolkit-workflow and be published as a Zenodo artifact alongside the manuscript; for now this is the single source of truth for the toolkit-skills plugin. Mirror any changes back to cckp-toolkit-workflow/bin/recompute_logistic_weights.py.",
+
+  "schema_version": "1.0.0",
+
+  "checks": {
+    "SGA-GL-0001": {"key": "readme",            "fix": "Add a README file"},
+    "SGA-GL-0002": {"key": "contributing",      "fix": "Add a CONTRIBUTING.md guide"},
+    "SGA-GL-0003": {"key": "code_of_conduct",   "fix": "Add a CODE_OF_CONDUCT.md"},
+    "SGA-GL-0004": {"key": "license",           "fix": "Add an OSI-approved LICENSE file"},
+    "SGA-GL-0005": {"key": "citable",           "fix": "Add a CITATION.cff or .zenodo.json"},
+    "SGA-GL-0006": {"key": "branch_not_master", "fix": "Rename default branch from master to main"},
+    "SGA-GL-0007": {"key": "common_docs",       "fix": "Add standard docs (changelog, docs/ folder)"},
+    "SGA-GL-0015": {"key": "uses_issues",       "fix": "Enable and use GitHub Issues"},
+    "SGA-GL-0017": {"key": "prs_enabled",       "fix": "Enable pull requests"},
+    "SGA-GL-0025": {"key": "doi_valid",         "fix": "Register a DOI (e.g. via Zenodo)"},
+    "SGA-GL-0026": {"key": "doi_resolvable",    "fix": "Ensure the DOI URL resolves correctly"}
+  },
+
+  "meta_ids": {
+    "SGA-META-0002": "commits",
+    "SGA-META-0005": "days_of_development",
+    "SGA-META-0003": "file_count"
+  },
+
+  "tier": {
+    "license":           1,
+    "citable":           1,
+    "code_of_conduct":   1,
+    "branch_not_master": 1,
+    "prs_enabled":       1,
+    "contributing":      2,
+    "readme":            2,
+    "common_docs":       2,
+    "uses_issues":       3,
+    "doi_valid":         3,
+    "doi_resolvable":    3
+  },
+
+  "tier_label": {
+    "1": "Tier 1, ~5 min",
+    "2": "Tier 2, ~30 min",
+    "3": "Tier 3, hours or behavioral"
+  },
+
+  "shap_weight": {
+    "_comment": "Mean |SHAP| on log10(stars+1), sustainability-only gradient-boosting model, n=4,431 starred research tools. From manuscript §4.3.",
+    "license":           0.126,
+    "citable":           0.122,
+    "branch_not_master": 0.080,
+    "contributing":      0.056,
+    "common_docs":       0.048,
+    "readme":            0.022,
+    "code_of_conduct":   0.016,
+    "uses_issues":       0.009,
+    "doi_valid":         0.004,
+    "doi_resolvable":    0.002,
+    "prs_enabled":       0.000
+  }
+}

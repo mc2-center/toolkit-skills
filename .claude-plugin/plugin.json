@@ -1,0 +1,16 @@
+{
+  "name": "toolkit-skills",
+  "description": "Claude Code skills for research software sustainability — assess repos, improve them with real engineering changes, review PRs, and analyze bioinformatics tool quality using the Software Gardening Almanack and JOSS criteria.",
+  "version": "1.1.0",
+  "author": {
+    "name": "aditigopalan",
+    "url": "https://github.com/aditigopalan"
+  },
+  "repository": "https://github.com/aditigopalan/toolkit-skills",
+  "homepage": "https://github.com/aditigopalan/toolkit-skills#readme",
+  "license": "MIT",
+  "skillsDir": ".claude/skills",
+  "agentsDir": "agents",
+  "mcpConfig": ".mcp.json",
+  "keywords": ["research-software", "sustainability", "bioinformatics", "almanack", "joss", "open-science"]
+}

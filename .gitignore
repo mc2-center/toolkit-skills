@@ -1,0 +1,20 @@
+# Nested project (its own git repo)
+InterpolAI/
+
+# Large slides, not part of the plugin
+Toolkit disovery results.pptx
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local-only Claude Code config
+.claude/settings.local.json
