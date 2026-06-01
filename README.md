@@ -55,7 +55,7 @@ Skills marked with `disable-model-invocation: true` (like `/commit`, `/review-pr
 If Claude Code supports your plugin directory, install directly from GitHub:
 
 ```bash
-/plugin install toolkit-skills@aditigopalan
+/plugin install toolkit-skills@mc2-center
 ```
 
 Or clone and reference locally:
